@@ -1,9 +1,9 @@
 ﻿# What is Query2ValidationException for Laravel 5?
-Query2ValidationException throw mysql QueryException which relate to business logic to ValidationException.
-For example:
-500 Column ':attribute' cannot be null
-to
-422 The :attribute field is required.
+Query2ValidationException throw mysql QueryException which relate to business logic to ValidationException.  
+For example:  
+500 Column ':attribute' cannot be null  
+to  
+422 The :attribute field is required.  
 
 # Install
 ```bash
@@ -122,7 +122,7 @@ public function update($id, Request $request)
 ```
 
 # How catch new global mysql exception
-* check error format in mysql doc site:
+* check error format in mysql doc site:  
 https://dev.mysql.com/doc/refman/8.0/en/server-error-reference.html
 * Intitialize builtin messages
 ```php
@@ -134,7 +134,7 @@ Query2ValidationException::$messageTemplates[<errorNo>] = ...
 ```
 * also you can change builtin messages
 
-Example for mysql >= 8.0.16 with check constraint support:
+Example for mysql >= 8.0.16 with check constraint support:  
 app/Exception/Handler.php
 ```php
 use Asmgit\Validation\Exception;
