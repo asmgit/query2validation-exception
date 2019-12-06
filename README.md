@@ -39,6 +39,7 @@ dd(Query2ValidationException::getMessageTemplates());
 ```
 <details> 
     <summary>Output</summary>
+    <p>
     ```php
     array:5 [
       1048 => array:3 [
@@ -86,7 +87,8 @@ dd(Query2ValidationException::getMessageTemplates());
         ]
       ]
     ]
-    ``` 
+    ```
+    </p>
 </details>
 
 # How set custom message for exception
