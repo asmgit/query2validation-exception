@@ -254,7 +254,7 @@ ADD CONSTRAINT `users|first_name,last_name|first name must be longer than last n
 ```
 
 # What are the disadvantages of Query2ValidationException solution?
-* Laravel Validation can raise all errors at one time, Query2ValidationException because Mysql raise only one first error.
+* Laravel Validation can raise all errors at one time, Query2ValidationException only one, because Mysql raise only one first error and stop executing.
 
 # What are the advantages of Query2ValidationException solution?
 * If you use Laravel Validation you need describe constraints in DB and dublicate validation logic in app layer YourController@store, YourController@update. With Query2ValidationException you can just describe constraints only in DB.
