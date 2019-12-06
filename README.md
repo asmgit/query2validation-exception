@@ -39,8 +39,7 @@ dd(Query2ValidationException::getMessageTemplates());
 ```
 <details> 
     <summary>Output</summary>
-    <code>
-        <pre>array:5 [
+    <code><pre>array:5 [
   1048 => array:3 [
     "orig" => "Column '(.*?)' cannot be null"
     "new" => "The :attribute field is required."
@@ -86,8 +85,7 @@ dd(Query2ValidationException::getMessageTemplates());
     ]
   ]
 ]
-        </pre>
-    </code>
+        </pre></code>
 </details>
 
 # How set custom message for exception
