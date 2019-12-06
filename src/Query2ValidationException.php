@@ -1,5 +1,5 @@
 <?php
-namespace Asmgit\Validation\Exception;
+namespace Asmgit\ValidationException;
 
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Collection;
@@ -12,7 +12,7 @@ class Query2ValidationException extends QueryException
 {
     // all errors: https://dev.mysql.com/doc/refman/8.0/en/server-error-reference.html
     const ER_BAD_NULL_ERROR = 1048; // Column '%s' cannot be null
-    const ER_DUP_ENTRY = 1062; // Duplicate entry ‘%s’ for key %d
+    const ER_DUP_ENTRY = 1062; // Duplicate entry '%s' for key %d
     const ER_DATA_TOO_LONG = 1406; // Data too long for column '%s' at row %ld
     // Enum fields 2 "in" validation
     const WARN_DATA_TRUNCATED = 1265; // Data truncated for column '%s' at row %ld
