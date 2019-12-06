@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "asmgit/query2validation-exception",
     "description": "Query2ValidationException for Laravel 5 with Mysql",
     "license": "MIT",
@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Asmgit\\Validation\\Exception\\": "src/"
+            "Asmgit\\ValidationException\\": "src/"
         }
     }
 }
