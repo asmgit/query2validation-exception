@@ -39,56 +39,55 @@ dd(Query2ValidationException::getMessageTemplates());
 ```
 <details> 
     <summary>Output</summary>
-    <p>
-    ```php
-    array:5 [
-      1048 => array:3 [
-        "orig" => "Column '(.*?)' cannot be null"
-        "new" => "The :attribute field is required."
-        "params" => array:1 [
-          1 => "attribute"
-        ]
-      ]
-      1062 => array:4 [
-        "orig" => "Duplicate entry '(.*?)' for key '(.*?)'"
-        "new" => "The :attribute has already been taken."
-        "params" => array:2 [
-          1 => "value"
-          2 => "index_name"
-        ]
-        "params_post_process" => Closure(&$ex) {#736
-          class: "App\Exceptions\Query2ValidationException"
-        }
-      ]
-      1406 => array:3 [
-        "orig" => "Data too long for column '(.*?)' at row ([0-9]+)"
-        "new" => "The :attribute is too long."
-        "params" => array:2 [
-          1 => "attribute"
-          2 => "rownum"
-        ]
-      ]
-      1265 => array:3 [
-        "orig" => "Data truncated for column '(.*?)' at row ([0-9]+)"
-        "new" => "The selected :attribute is invalid."
-        "params" => array:2 [
-          1 => "attribute"
-          2 => "rownum"
-        ]
-      ]
-      1366 => array:3 [
-        "orig" => "Incorrect (.*?) value: '(.*?)' for column '(.*?)' at row ([0-9]+)"
-        "new" => "The :attribute must be an :field_type type."
-        "params" => array:4 [
-          1 => "field_type"
-          2 => "value"
-          3 => "attribute"
-          4 => "rownum"
-        ]
-      ]
+    <code>
+        <pre>array:5 [
+  1048 => array:3 [
+    "orig" => "Column '(.*?)' cannot be null"
+    "new" => "The :attribute field is required."
+    "params" => array:1 [
+      1 => "attribute"
     ]
-    ```
-    </p>
+  ]
+  1062 => array:4 [
+    "orig" => "Duplicate entry '(.*?)' for key '(.*?)'"
+    "new" => "The :attribute has already been taken."
+    "params" => array:2 [
+      1 => "value"
+      2 => "index_name"
+    ]
+    "params_post_process" => Closure(&$ex) {#736
+      class: "App\Exceptions\Query2ValidationException"
+    }
+  ]
+  1406 => array:3 [
+    "orig" => "Data too long for column '(.*?)' at row ([0-9]+)"
+    "new" => "The :attribute is too long."
+    "params" => array:2 [
+      1 => "attribute"
+      2 => "rownum"
+    ]
+  ]
+  1265 => array:3 [
+    "orig" => "Data truncated for column '(.*?)' at row ([0-9]+)"
+    "new" => "The selected :attribute is invalid."
+    "params" => array:2 [
+      1 => "attribute"
+      2 => "rownum"
+    ]
+  ]
+  1366 => array:3 [
+    "orig" => "Incorrect (.*?) value: '(.*?)' for column '(.*?)' at row ([0-9]+)"
+    "new" => "The :attribute must be an :field_type type."
+    "params" => array:4 [
+      1 => "field_type"
+      2 => "value"
+      3 => "attribute"
+      4 => "rownum"
+    ]
+  ]
+]
+        </pre>
+    </code>
 </details>
 
 # How set custom message for exception
